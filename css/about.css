@@ -1,0 +1,94 @@
+/* for the images to be responsive we set max-width on the container
+and width: 100% for the picture. We dont put a fix value for the picture.
+*/
+
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  max-width: var(--container-width);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.about-picture {
+  display: block;
+  width: 100%;
+}
+
+.about-title {
+  grid-column: 1 / span 3;
+}
+
+.about-title {
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.about-title h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: var(--dark-gray);
+}
+
+.about-title span {
+  color: var(--primary-color);
+}
+
+.about-left {
+}
+
+.about-left p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+}
+
+.about-left h1 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.about-btn {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  color: var(--primary-color);
+  border: 0.4rem solid var(--primary-color);
+  border-radius: 0.5rem;
+
+  transition: 0.3s ease-in-out;
+}
+
+.about-btn:hover,
+.about-btn:active {
+  color: var(--white-color);
+  background: var(--primary-color);
+  box-shadow: 0px 0px 0px 4px var(--light-gray);
+}
+
+.about-center h3,
+.about-right h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 4.8rem 0 1.6rem 0;
+  color: var(--dark-gray);
+}
+
+.about-center p,
+.about-right p {
+  font-size: 1.6rem;
+  color: var(--text-gray);
+}
+

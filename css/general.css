@@ -46,6 +46,11 @@ SPACING SYSTEM (px)
 :root{
   --white-color: #fff;
   --primary-color: #d35400;
+  --dark-gray: #212529;
+  --light-gray: #adb5bd;
+  --text-gray:#495057;
+  --container-width: 110rem;
+
 
 }
 
@@ -77,6 +82,7 @@ body{
   background: url('/img/restaurant.jpg') no-repeat center center/cover;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 
 
@@ -93,8 +99,6 @@ body{
   color: var(--white-color);
   display: flex;
   justify-content: center;
-  margin: 0 4rem 0 4rem;
-  
 }
 
 .logo {
@@ -126,7 +130,7 @@ body{
   font-size: 1.4rem;
   padding-bottom: 0.7rem;
   border-bottom: 2px solid transparent;
-  color: white;
+  color: var(--white-color);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
@@ -144,7 +148,6 @@ body{
 }
 
 .text-container{
-  margin: 0 4rem 0 4rem;
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -180,7 +183,7 @@ body{
   
 
 
-  transition: 0.3s ease-in;
+  transition: 0.3s ease-in-out;
 }
 
 .hero-btn:hover,
