@@ -23,18 +23,6 @@ and width: 100% for the picture. We dont put a fix value for the picture.
   grid-column: 1 / span 3;
 }
 
-.about-title {
-  text-align: center;
-  padding: 10rem 0;
-}
-
-.about-title h2 {
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  color: var(--dark-gray);
-}
-
 .about-title span {
   color: var(--primary-color);
 }

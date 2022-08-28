@@ -1,0 +1,79 @@
+.specials-container{
+  display: flex;
+  justify-content: center;
+}
+
+.specials{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 110rem;
+}
+
+.specials-img {
+  width: 100%;
+}
+
+.specials-title {
+  grid-column: 1 / span 3;
+}
+
+.specials-title span {
+  color: var(--primary-color);
+}
+
+.special-left,
+.special-center,
+.special-right{
+  position: relative;
+}
+
+.special-left::before,
+.special-center::before,
+.special-right::before{
+  content: "";
+  width: 8rem;
+  height: 4rem;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: bold;
+  background:var(--white-color);
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.special-left::before{
+  content: "€ 4.25";
+}
+
+.special-center::before{
+  content: "€ 3.85";
+}
+
+.special-right::before{
+  content: "€ 5.18";
+}
+
+
+.special-text{
+  margin-top: 4.8rem;
+}
+
+.special-text h3{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.6rem;
+  color: var(--dark-gray);
+}
+
+.special-text p {
+  font-size: 1.6rem;
+  color: var(--text-gray);
+}
+
