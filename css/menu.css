@@ -1,0 +1,155 @@
+.the-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.1rem;
+}
+
+.menu-title {
+  grid-column: 1 / span 4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10rem;
+}
+
+.menu-container {
+}
+
+.menu-title h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.menu-title p {
+  font-size: 1.6rem;
+  color: var(--text-gray);
+  max-width: 60rem;
+  margin-bottom: 8rem;
+}
+
+.box {
+  position: relative;
+  /* for the image to not go out of the box when enlarged */
+  overflow: hidden;
+}
+.menu-img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.box::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(255, 255, 255, 0);
+  
+  font-size: 1.6rem;
+  line-height: 3rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.6);
+  z-index: -1;
+  transition: color 0.4s;
+
+}
+
+/* to enlarge the image when hover */
+.menu-img:hover {
+  transform: scale(1.1);
+}
+
+.box:hover::before {
+  z-index: 1;
+  /* for the image to enlarge when i put the gry filter over image */
+  pointer-events: none;
+  color: var(--white-color) 
+}
+
+
+.the-menu :nth-child(1)::before {
+  content: "Food 1 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(2)::before {
+  content: "Food 3 \A € 3.24";
+  white-space:pre;
+}
+.the-menu :nth-child(3)::before {
+  content: "Food 3 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(4)::before {
+  content: "Food 4 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(5)::before {
+  content: "Food 5 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(6)::before {
+  content: "Food 6 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(7)::before {
+  content: "Food 7 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(8)::before {
+  content: "Food 8 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(9)::before {
+  content: "Food 9 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(10)::before {
+  content: "Food 10 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(11)::before {
+  content: "Food 11 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(12)::before {
+  content: "Food 12 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(13)::before {
+  content: "Food 13 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(14)::before {
+  content: "Food 14 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(15)::before {
+  content: "Food 15 \A € 3.24";
+  white-space:pre;
+}
+
+.the-menu :nth-child(6)::before {
+  content: "Food 16 \A € 3.24";
+  white-space:pre;
+}
