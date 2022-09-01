@@ -1,0 +1,51 @@
+.service-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.service-title {
+  max-width: 50rem;
+}
+
+.service-title h3 {
+  font-size: 2.4rem;
+  text-transform:uppercase;
+  text-align: center;
+}
+
+.service-text {
+
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--text-gray);
+  margin: 4.8rem 0;
+
+}
+
+.service-icons-container{
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.ph-coffee,
+.ph-hamburger,
+.ph-wine,
+.ph-fork-knife{
+  color: var(--primary-color);
+  font-size: 8rem;
+  padding: 3rem;
+  border: 0.5rem solid var(--light-gray);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.ph-coffee:hover,
+.ph-hamburger:hover,
+.ph-wine:hover,
+.ph-fork-knife:hover{
+
+  border: 0.5rem solid var(--primary-color);
+}
