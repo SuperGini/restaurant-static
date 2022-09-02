@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="/css//special.css" />
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/reservation.css" />
-    <link rel="stylesheet" href="/css/service.css">
-    
+    <link rel="stylesheet" href="/css/service.css" />
+    <link rel="stylesheet" href="/css/big.css">
+
     <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Ginitoru restaurant</title>
   </head>
@@ -312,7 +313,8 @@
       <div class="inner-wrapper">
         <div class="reservation-title">
           <h3>
-            <span>==========</span>&nbsp; Reservation &nbsp;<span>==========</span
+            <span>==========</span>&nbsp; Reservation &nbsp;<span
+              >==========</span
             >
           </h3>
           <div class="reservation-text">
@@ -327,7 +329,7 @@
         <form class="form-container" action="POST">
           <div class="name-input">
             <ion-icon class="person-icon" name="person"></ion-icon>
-            <input type="text" name="name" required/>
+            <input type="text" name="name" required />
             <label class="name-label" for="name">Your Name</label>
           </div>
 
@@ -349,7 +351,6 @@
               <option value="16:00 AM">16:00 AM</option>
             </select>
           </div>
-        
 
           <select class="persons" name="persons" id="">
             <option value="1 person">1 person</option>
@@ -362,58 +363,94 @@
     </section>
 
     <section class="service-container margin-left-right">
-      <div class="service-title">
-        <h3>
-          <span>==========</span>&nbsp; Reservation &nbsp;<span>==========</span>
-        </h3>
-        <div class="service-text">
+      <div class="service-wrap">
+        <div class="service-title">
+          <h3>
+            <span>==========</span>&nbsp; Reservation &nbsp;<span
+              >==========</span
+            >
+          </h3>
+          <div class="service-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              beatae nesciunt necessitatibus a blanditiis deserunt fugit odit,
+              dignissimos reprehenderit quisquam!
+            </p>
+          </div>
+        </div>
+
+        <div class="service-icons-container">
+          <div class="service-icon">
+            <i class="ph-coffee"></i>
+            <div class="res-text">
+              <h3>Breakfast</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                iure!
+              </p>
+            </div>
+          </div>
+
+          <div class="service-icon">
+            <i class="ph-hamburger"></i>
+            <div class="res-text">
+              <h3>Lunch</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                iure!
+              </p>
+            </div>
+          </div>
+          <div class="service-icon">
+            <i class="ph-wine"></i>
+            <div class="res-text">
+              <h3>Dinner</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                iure!
+              </p>
+            </div>
+          </div>
+          <div class="service-icon">
+            <i class="ph-fork-knife"></i>
+            <div class="res-text">
+              <h3>Custom</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                iure!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BIG PICTURE CONTAINER -------------------------------------------------- -->
+    <section class="big-picture">
+      <img class="big-img"
+        src="/img/big/bigPicture.jpg"
+        alt="picture wiht people eating food"
+      />
+
+      <div class="big-picture-container">
+        <div class="big-text">
+          <h3>Amazing restaurant come and experience our food</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            beatae nesciunt necessitatibus a blanditiis deserunt fugit odit,
-            dignissimos reprehenderit quisquam!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet,
+            incidunt dolorum cum ipsam accusamus a? Quod necessitatibus
+            reiciendis odio ea!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+            doloremque perspiciatis magni impedit facere tempore autem
+            distinctio ullam tenetur atque.
           </p>
         </div>
-      </div>
 
-      <div class="service-icons-container">
-        <div class="cofee">
-          <i class="ph-coffee"></i>
-          <div class="res-text">
-            <h3>Breakfast</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, iure!</p>
-          </div>
-          <div class="litle-border"></div>
-        </div>
-        <div class="cofee">
-          <i class="ph-hamburger"></i>
-          <div class="res-text">
-            <h3>Lunch</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, iure!</p>
-          </div>
-          <div class="litle-border"></div>
-          
-        </div>
-        <div class="cofee">
-          <i class="ph-wine"></i>
-          <div class="res-text">
-            <h3>Dinner</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, iure!</p>
-          </div>
-          <div class="litle-border"></div>
-          
-        </div>
-        <div class="cofee">
-          <i class="ph-fork-knife"></i>
-          <div class="res-text">
-            <h3>Custom</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, iure!</p>
-          </div>
-          <div class="litle-border"></div>
-          
+        <div class="big-buttons">
+          <a href="#">Reserve Now</a>
+          <a href="#">Our Menu</a>
         </div>
       </div>
-
-
     </section>
 
     <script
