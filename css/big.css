@@ -1,9 +1,11 @@
 .big-picture{
   position: relative;
+  overflow: hidden;
 }
 
 .big-img{
   width: 100vw;
+  display: block;
 }
 
 .big-picture::before{
