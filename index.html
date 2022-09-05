@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/css/service.css" />
     <link rel="stylesheet" href="/css/big.css" />
     <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
 
     <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Ginitoru restaurant</title>
@@ -362,14 +363,12 @@
         </form>
       </div>
     </section>
-<!-- SERVICE CONTAINER------------------------------------------------ -->
+    <!-- SERVICE CONTAINER------------------------------------------------ -->
     <section class="service-container margin-left-right">
       <div class="service-wrap">
         <div class="service-title">
           <h3>
-            <span>==========</span>&nbsp; Service &nbsp;<span
-              >==========</span
-            >
+            <span>==========</span>&nbsp; Service &nbsp;<span>==========</span>
           </h3>
           <div class="service-text">
             <p>
@@ -484,31 +483,42 @@
         <form class="contact-form" action="POST">
           <div class="contact-fields">
             <div class="contact-name">
+              <input class="contact" type="text" required />
               <label for="name">Your Name</label>
-              <input class="contact" type="text" />
             </div>
             <div class="email-name">
+              <input class="email" type="text" required />
               <label for="email">Your email</label>
-              <input class="email" type="text" />
             </div>
           </div>
-          
-          <div class="area-container"> 
+
+          <div class="area-container">
             <textarea
-            name="message"
-            class="contact-message"
-          ></textarea>
+              name="message"
+              class="contact-message"
+              required
+              maxlength="500"
+            ></textarea>
+            <label for="message">Message</label>
           </div>
-         
-          <input class="contact-btn" type="button" value="Send message"/>
+
+          <input class="contact-btn" type="button" value="Send message" />
         </form>
-
-
       </div>
-
-     
-      
     </section>
+
+    <footer>
+      <div class="links">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+      </div>
+      <div class="base">
+        <p>2022 coded by Ginitoru</p>
+        <p>Ginitoru<span>&trade;</span></p>
+      </div>
+    </footer>
 
     <script
       type="module"

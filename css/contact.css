@@ -1,4 +1,4 @@
-.contact-us-container{
+.contact-us-container {
   margin-top: 10rem;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
   /* https://stackoverflow.com/questions/43705866/max-width-not-working-on-flex-item */
   max-width: 110rem;
   width: 100%;
-  margin-bottom: 300px;
+
 }
 
 .contact-us-title {
@@ -18,17 +18,16 @@
   text-align: center;
 }
 
-.contact-icon-container{
+.contact-icon-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 6.4rem;
   justify-items: center;
 }
 
-.contact-icons{
+.contact-icons {
   display: flex;
   flex-direction: column;
-
 }
 
 .contact-icons ion-icon {
@@ -39,7 +38,7 @@
   color: var(--primary-color);
 }
 
-.contact-icons p{
+.contact-icons p {
   font-size: 1.4rem;
   text-transform: uppercase;
   color: var(--text-gray);
@@ -51,13 +50,12 @@
   grid-template-columns: repeat(2, 1fr);
 
   margin-top: 6.4rem;
-  justify-content: space-around;
-
+  gap: 3.2rem;
 }
 
-
-.contact, .email {
-  max-width: 50rem;
+.contact,
+.email {
+  max-width: 55rem;
   width: 100%;
   padding: 1.2rem 2.4rem;
   margin-bottom: 2.4rem;
@@ -73,17 +71,42 @@
   border: 1px solid var(--primary-color);
   border-radius: 0.5rem;
   outline: none;
+}
 
+.contact-name input:focus,
+.email-name input:focus {
+  box-shadow: 0px 0px 0px 3px rgba(211, 84, 0, 0.3);
+  border: 1px solid var(--white-color);
 }
 
 .contact-name label,
 .email-name label {
   position: absolute;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--light-gray);
+  top: 20%;
+  left: 2.4rem;
+  pointer-events: none;
+  transition: all 0.3s;
 }
 
-.area-container{
+.contact:focus ~ label,
+.contact:valid ~ label,
+.email:focus ~ label,
+.email:valid ~ label {
+  top: -11%;
+  left: 5%;
+  color: var(--primary-color);
+  padding: 0 2rem 0 2rem;
+  font-size: small;
+  background: var(--white-color);
+}
+
+.area-container {
   grid-column: 2;
-  grid-row: 1 /  span 2;
+  grid-row: 1 / span 2;
+  position: relative;
 }
 
 textarea {
@@ -93,10 +116,37 @@ textarea {
   outline: none;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
+  padding: 1rem 2.4rem;
 }
 
-.contact-btn{
-  max-width: 50rem;
+.area-container label {
+  position: absolute;
+  top: 8%;
+  left: 2.4rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--light-gray);
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -5%;
+  left: 4%;
+
+  color: var(--primary-color);
+  padding: 0 2rem;
+  background: var(--white-color);
+}
+
+textarea:focus {
+  border: transparent;
+  box-shadow: 0px 0px 0px 3px rgba(211, 84, 0, 0.3);
+}
+
+.contact-btn {
+  max-width: 55rem;
   padding: 1rem 2rem;
   text-align: center;
   background: var(--primary-color);
@@ -105,12 +155,12 @@ textarea {
   border-radius: 0.5rem;
   border-style: outset;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
 
   transition: all 0.3s;
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
   color: var(--primary-color);
   background: var(--white-color);
   box-shadow: 0 0 0 4px var(--primary-color);
