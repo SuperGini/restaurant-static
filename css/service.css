@@ -1,5 +1,5 @@
 .service-container {
-  margin-top: 10rem;
+  padding-top: 10rem;
   display: flex;
   justify-content: center;
   margin-bottom: 10rem;
@@ -43,7 +43,6 @@
   color: var(--primary-color);
   font-size: 8rem;
   padding: 3rem;
-  border: 0.5rem solid var(--light-gray);
   border-radius: 50%;
   transition: all 0.3s;
 }
@@ -82,4 +81,93 @@
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 1px solid var(--text-gray);
+}
+
+.service-icon {
+  z-index: 3;
+}
+
+.xxx {
+  z-index: 6;
+  pointer-events: none;
+}
+
+.ph-coffee,
+.ph-hamburger,
+.ph-wine,
+.ph-fork-knife {
+  background: var(--white-color);
+}
+
+.exterior-circle {
+  position: absolute;
+  /* background: aqua; */
+  width: 15rem;
+  height: 15rem;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -0.5rem);
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: all;
+}
+
+.segment1 {
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform-origin: 0 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.segment2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  transform-origin: 0 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: rotate(180deg) skew(0deg);
+  }
+
+  100% {
+    transform: rotate(540deg) skew(0deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: rotate(0deg) skew(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) skew(0deg);
+  }
+}
+
+.exterior-circle:hover .segment1 {
+  animation-name: animate1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: var(--text-gray);
+}
+
+.exterior-circle:hover .segment2 {
+  animation-name: animate2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: var(--primary-color);
 }

@@ -1,5 +1,5 @@
 .contact-us-container {
-  margin-top: 10rem;
+  padding-top: 10rem;
   display: flex;
   justify-content: center;
 }
@@ -9,7 +9,6 @@
   /* https://stackoverflow.com/questions/43705866/max-width-not-working-on-flex-item */
   max-width: 110rem;
   width: 100%;
-
 }
 
 .contact-us-title {

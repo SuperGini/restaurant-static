@@ -22,40 +22,69 @@
     <link rel="stylesheet" href="/css/big.css" />
     <link rel="stylesheet" href="/css/contact.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
 
     <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Ginitoru restaurant</title>
   </head>
   <body>
     <!-- HERO PAGE -------------------------------------------------------------------------- -->
-    <header class="hero-page">
+    <header class="hero-page" id="home" >
       <!-- MENU LOGO + NAVBAR ---------->
-      <menu class="menu margin-left-right">
-        <h1 class="logo">Ginitoru <span>&trade;</span></h1>
-        <ul class="navigation">
-          <li class="nav-item"><a href="#" class="link">Home</a></li>
-          <li class="nav-item"><a href="#" class="link">About</a></li>
-          <li class="nav-item"><a href="#" class="link">The Menu</a></li>
-          <li class="nav-item"><a href="#" class="link">Our Service</a></li>
-          <li class="nav-item"><a href="#" class="link">Reservation</a></li>
-          <li class="nav-item"><a href="#" class="link">Newsletter</a></li>
-        </ul>
-      </menu>
+      <div class="yyy">
+        <menu class="menu">
+          <h1 class="logo">Ginitoru <span class="trade">&trade;</span></h1>
+          <a href="#/" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          
+          <ul class="navigation">
+         
+            <li class="nav-item"><a href="#home" class="link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="link">About</a></li>
+            <li class="nav-item"><a href="#menu" class="link">The Menu</a></li>
+            <li class="nav-item">
+              <a href="#service" class="link">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reservation" class="link">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="link">Newsletter</a>
+            </li>
+          </ul>
+        </menu>
+      </div>
+
       <!-- CENTER HERO PAGE TEXT -------->
       <div class="text-container margin-left-right">
         <div class="center-text">
           <h2 class="main-text">Enjoy a Wonderful Experience</h2>
           <p class="sub-text">Just simply Delicious.</p>
-          <a class="hero-btn" href="#">Menu</a>
+          <a class="hero-btn" href="#menu">Menu</a>
         </div>
       </div>
       <div class="empty"></div>
     </header>
     <!-- ABOUT---------------------------------------------------------------------------- -->
-    <div class="about-container margin-left-right">
+    <div class="about-container margin-left-right" id="about">
       <section class="about">
         <div class="about-title title-format">
-          <h2><span>==========</span> About us <span>==========</span></h2>
+          <h3>
+            <span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon>
+            </span>
+            About us
+            <span>
+              <ion-icon class="star3" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+            </span>
+          </h3>
         </div>
 
         <div class="about-left">
@@ -66,7 +95,7 @@
             excepturi voluptatibus quidem. Nesciunt quas laborum aspernatur ea
             consequatur alias optio!
           </p>
-          <a class="about-btn" href="#">Discover menu</a>
+          <a class="about-btn" href="#menu">Discover menu</a>
         </div>
 
         <div class="about-center">
@@ -117,7 +146,7 @@
           <div class="book-text">
             <h2>Art of Food</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Book Now!</a>
+            <a href="#reservation">Book Now!</a>
           </div>
         </div>
         <div class="book-right">
@@ -133,7 +162,19 @@
     <div class="specials-container margin-left-right">
       <section class="specials">
         <div class="specials-title title-format">
-          <h3><span>===========</span> Specials <span>=============</span></h3>
+          <h3>
+            <span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon>
+            </span>
+            Specials
+            <span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon>
+            </span>
+          </h3>
         </div>
         <div class="special-left">
           <img
@@ -183,9 +224,21 @@
 
     <!-- MENU CONTAINER-------------------------------------------------------->
 
-    <section class="menu-container">
+    <section class="menu-container" id="menu">
       <div class="menu-title">
-        <h3><span>==========</span> The Menu <span>==========</span></h3>
+        <h3>
+          <span>
+            <ion-icon class="star1" name="star-outline"></ion-icon>
+            <ion-icon class="star2" name="star-outline"></ion-icon>
+            <ion-icon class="star3" name="star-outline"></ion-icon>
+          </span>
+          The Menu
+          <span>
+            <ion-icon class="star1" name="star-outline"></ion-icon>
+            <ion-icon class="star2" name="star-outline"></ion-icon>
+            <ion-icon class="star3" name="star-outline"></ion-icon>
+          </span>
+        </h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima beatae
           nesciunt necessitatibus a blanditiis deserunt fugit odit, dignissimos
@@ -311,13 +364,19 @@
 
     <!-- RESERVATION CONTAINER----------------------------------------------------- -->
 
-    <section class="reservation-container margin-left-right">
+    <section class="reservation-container margin-left-right" id="reservation">
       <div class="inner-wrapper">
         <div class="reservation-title">
           <h3>
-            <span>==========</span>&nbsp; Reservation &nbsp;<span
-              >==========</span
-            >
+            <span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon></span
+            >&nbsp; Reservation &nbsp;<span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon
+            ></span>
           </h3>
           <div class="reservation-text">
             <p>
@@ -364,11 +423,19 @@
       </div>
     </section>
     <!-- SERVICE CONTAINER------------------------------------------------ -->
-    <section class="service-container margin-left-right">
+    <section class="service-container margin-left-right" id="service">
       <div class="service-wrap">
         <div class="service-title">
           <h3>
-            <span>==========</span>&nbsp; Service &nbsp;<span>==========</span>
+            <span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon> </span
+            >&nbsp; Service &nbsp;<span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon>
+            </span>
           </h3>
           <div class="service-text">
             <p>
@@ -381,7 +448,13 @@
 
         <div class="service-icons-container">
           <div class="service-icon">
-            <i class="ph-coffee"></i>
+            <div class="exterior-circle">
+              <div class="segment1"></div>
+              <div class="segment2"></div>
+            </div>
+            <div class="xxx">
+              <i class="ph-coffee"></i>
+            </div>
             <div class="res-text">
               <h3>Breakfast</h3>
               <p>
@@ -392,7 +465,13 @@
           </div>
 
           <div class="service-icon">
-            <i class="ph-hamburger"></i>
+            <div class="exterior-circle">
+              <div class="segment1"></div>
+              <div class="segment2"></div>
+            </div>
+            <div class="xxx">
+              <i class="ph-hamburger"></i>
+            </div>
             <div class="res-text">
               <h3>Lunch</h3>
               <p>
@@ -402,7 +481,13 @@
             </div>
           </div>
           <div class="service-icon">
-            <i class="ph-wine"></i>
+            <div class="exterior-circle">
+              <div class="segment1"></div>
+              <div class="segment2"></div>
+            </div>
+            <div class="xxx">
+              <i class="ph-wine"></i>
+            </div>
             <div class="res-text">
               <h3>Dinner</h3>
               <p>
@@ -412,7 +497,13 @@
             </div>
           </div>
           <div class="service-icon">
-            <i class="ph-fork-knife"></i>
+            <div class="exterior-circle">
+              <div class="segment1"></div>
+              <div class="segment2"></div>
+            </div>
+            <div class="xxx">
+              <i class="ph-fork-knife"></i>
+            </div>
             <div class="res-text">
               <h3>Custom</h3>
               <p>
@@ -449,20 +540,26 @@
           </div>
 
           <div class="big-buttons">
-            <a class="big-btn" href="#">Reserve Now</a>
-            <a class="big-btn" href="#">Our Menu</a>
+            <a class="big-btn" href="#reservation">Reserve Now</a>
+            <a class="big-btn" href="#menu">Our Menu</a>
           </div>
         </div>
       </div>
     </section>
     <!-- CONTACT US -------------------------------------------------------------- -->
-    <section class="contact-us-container margin-left-right">
+    <section class="contact-us-container margin-left-right" id="contact">
       <div class="contact-us-wrapper">
         <div class="contact-us-title">
           <h3>
-            <span>==========</span>&nbsp; Contact us &nbsp;<span
-              >==========</span
-            >
+            <span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon> </span
+            >&nbsp; Contact us &nbsp;<span>
+              <ion-icon class="star1" name="star-outline"></ion-icon>
+              <ion-icon class="star2" name="star-outline"></ion-icon>
+              <ion-icon class="star3" name="star-outline"></ion-icon>
+            </span>
           </h3>
         </div>
         <div class="contact-icon-container">
@@ -506,16 +603,26 @@
         </form>
       </div>
     </section>
-
+    <!-- FOOTER CONTAINER------------------------------------------------------------------ -->
     <footer>
       <div class="links">
-        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
-        <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><ion-icon name="logo-youtube"></ion-icon
+        ></a>
+        <a href="https://www.linkedin.com" target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
       </div>
       <div class="base">
-        <p>2022 coded by Ginitoru</p>
+        <p>
+          2022 coded by Ginitoru. <span>&#8594; just a static web-page</span>
+        </p>
         <p>Ginitoru<span>&trade;</span></p>
       </div>
     </footer>
@@ -528,5 +635,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/hamburger_menu.js"></script>
   </body>
 </html>

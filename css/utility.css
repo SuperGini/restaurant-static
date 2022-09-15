@@ -1,8 +1,6 @@
-.margin-left-right{
+.margin-left-right {
   margin: 0 4rem 0 4rem;
 }
-
-
 
 /* PAGE TITLES FORMATING------------------------ */
 
@@ -13,4 +11,11 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: var(--dark-gray);
+}
+
+.star1,
+.star2,
+.star3 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
 }
