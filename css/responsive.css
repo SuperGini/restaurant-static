@@ -1,11 +1,18 @@
+@media (max-width: 1000px) {
 
+  .book {
+    grid-template-columns: 1fr;
+   
+  }
 
+  .book-hiden{
+    display: none;
+  }
 
+}
 
-
-@media (max-width: 900px){
-
-  .menu{
+@media (max-width: 900px) {
+  .menu {
     flex-direction: column;
   }
 
@@ -17,27 +24,22 @@
     display: none;
   }
 
-  .navigation.pop-up{
+  .navigation.pop-up {
     display: flex !important;
   }
 
-  .navigation.hide{
+  .navigation.hide {
     display: none;
   }
 
-
-
   .nav-item {
-  
-   text-align: center;
+    text-align: center;
     width: 100%;
-
   }
 
-  .link{
+  .link {
     padding: 1rem 0;
     border-bottom: 0px;
-
   }
 
   .link:hover {
@@ -46,7 +48,7 @@
     border-bottom: 0px;
   }
 
-  .logo{
+  .logo {
     min-height: 6rem;
     display: flex;
     align-items: center;
@@ -55,10 +57,94 @@
     gap: 0.5rem;
   }
 
-  .toggle-button{
+  .toggle-button {
     display: flex;
   }
+
+  .service-icons-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
+
+@media(max-width: 850px){
+  .contact-icons ion-icon {
+    font-size: 3rem;
+  }
+
+
+
+  .about-left{
+    grid-column: 1 / span 3;
+  }
+
+  .about-center {
+    grid-column: 1 / span 3;
+  }
+
+  .about-right {
+    grid-column: 1 / span 3;
+  }
+
+  .special-left {
+    grid-column: 1 / span3 ;
+  }
+
+  .special-center {
+    grid-column: 1 / span 3;
+  }
+
+  .special-right {
+    grid-column: 1 /span 3;
+  }
+
+  .the-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .contact-form{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0;
+  }
+
+
+  .area-container {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    max-width: 55rem;
+    width: 100%;
+ 
+  }
+  .contact-btn {
+    margin-top: 3.2rem;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -67,33 +153,24 @@
 
 /* General */
 
-.toggle-button .bar.x1{
+.toggle-button .bar.x1 {
   background: var(--primary-color);
   transform: rotate(135deg);
   top: 11px;
 }
 
-.toggle-button .bar.x2{
+.toggle-button .bar.x2 {
   background: var(--primary-color);
   transform: rotate(45deg);
- 
 }
 
-.toggle-button .bar.x3{
+.toggle-button .bar.x3 {
   background: var(--primary-color);
   transform: rotate(-45deg);
   bottom: 11px;
- 
 }
 
-
-
-
-
-
-
-
-.yyy.dark-backgroud{
+.yyy.dark-backgroud {
   background: var(--dark-gray) !important;
 }
 
@@ -104,9 +181,3 @@
 .trade.orange-color {
   color: var(--primary-color) !important;
 }
-
-
-
-
-
-

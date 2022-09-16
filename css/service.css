@@ -47,13 +47,6 @@
   transition: all 0.3s;
 }
 
-.ph-coffee:hover,
-.ph-hamburger:hover,
-.ph-wine:hover,
-.ph-fork-knife:hover {
-  border: 0.5rem solid var(--primary-color);
-}
-
 .res-text h3 {
   font-size: 1.6rem;
   font-weight: 500;
@@ -170,4 +163,8 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background: var(--primary-color);
+}
+
+.exterior-circle:hover .xxx .ph-coffee{
+ color: aqua;
 }

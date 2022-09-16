@@ -52,6 +52,12 @@
   gap: 3.2rem;
 }
 
+.contact-fields{
+  max-width: 55rem;
+  width: 100%;
+}
+
+
 .contact,
 .email {
   max-width: 55rem;
@@ -146,6 +152,7 @@ textarea:focus {
 
 .contact-btn {
   max-width: 55rem;
+  width: 100%;
   padding: 1rem 2rem;
   text-align: center;
   background: var(--primary-color);
