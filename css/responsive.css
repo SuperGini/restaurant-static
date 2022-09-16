@@ -129,6 +129,12 @@
 
 }
 
+@media(max-width: 500px){
+  .margin-left-right {
+    margin: 0 2rem 0 2rem;
+  }
+}
+
 
 
 
