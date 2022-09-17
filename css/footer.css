@@ -22,16 +22,15 @@ footer {
   transition: all 0.3s;
 }
 
-.links a:visited{
+.links a:visited {
   color: var(--dark-gray);
 }
 
-.links a:hover{
+.links a:hover {
   border-bottom: 1px solid var(--primary-color);
 }
 
 .base {
-
   display: flex;
   justify-content: space-between;
 

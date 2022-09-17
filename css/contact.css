@@ -52,11 +52,10 @@
   gap: 3.2rem;
 }
 
-.contact-fields{
+.contact-fields {
   max-width: 55rem;
   width: 100%;
 }
-
 
 .contact,
 .email {

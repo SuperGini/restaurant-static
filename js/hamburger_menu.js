@@ -43,7 +43,6 @@ about.addEventListener("click", () => {
   barThird.classList.toggle("x3");
 });
 
-
 menu2.addEventListener("click", () => {
   navigationPop.classList.toggle("hide");
   navigationPop.classList.toggle("pop-up");
@@ -56,7 +55,6 @@ menu2.addEventListener("click", () => {
   barSecond.classList.toggle("x2");
   barThird.classList.toggle("x3");
 });
-
 
 service.addEventListener("click", () => {
   navigationPop.classList.toggle("hide");
@@ -71,7 +69,6 @@ service.addEventListener("click", () => {
   barThird.classList.toggle("x3");
 });
 
-
 reservation.addEventListener("click", () => {
   navigationPop.classList.toggle("hide");
   navigationPop.classList.toggle("pop-up");
@@ -85,7 +82,6 @@ reservation.addEventListener("click", () => {
   barThird.classList.toggle("x3");
 });
 
-
 newsletter.addEventListener("click", () => {
   navigationPop.classList.toggle("hide");
   navigationPop.classList.toggle("pop-up");
@@ -98,30 +94,6 @@ newsletter.addEventListener("click", () => {
   barSecond.classList.toggle("x2");
   barThird.classList.toggle("x3");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 toogleButton.addEventListener("click", () => {
   navigationPop.classList.toggle("pop-up");
