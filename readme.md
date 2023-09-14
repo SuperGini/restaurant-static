@@ -1,4 +1,4 @@
-###Responsive restaurant static site:
+# Responsive restaurant static site:
 
 ---01 TYPOGRAPHY SYSTEM
 
